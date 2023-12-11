@@ -3,6 +3,10 @@
     margin:0;
     padding: 0;
 }
+
+/* body{
+    width: 100vw;
+} */
 .main{
     width: 100vw;
     height: 100vh;
@@ -13,7 +17,7 @@
     justify-content: center;  
 }
 .header{
-    width: 40vw;
+    width: 50vw;
     height: 5vh;
     background-color: #15C7FF;   
     display: flex;
@@ -28,7 +32,7 @@
 .conteudo{
     /* background-color: yellow; */
     padding-top: 3vh;
-    width: 40vw;
+    width: 50vw;
     padding-left: 1vw;
     padding-right: 1vw;
     border-color:  #CDCDCD;;

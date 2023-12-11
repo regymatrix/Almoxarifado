@@ -63,11 +63,11 @@ input, select{
 }
 
 .grupoProdutoDescricao{
-    width: 320px;
+    width: 300px;
     margin-right: 5px;
 }
 .grupoProdutoDescricao input{
-    width: 320px;
+    width: 300px;
 }
 .grupoEstoque{
     width: 80px;
