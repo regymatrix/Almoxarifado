@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almoxarifado</title>
+    <link rel="stylesheet" href="/assets/css/requisicao.css">
+    <link rel="stylesheet" href="/assets/css/inputRequisicao.css">
+</head>
+<body>
+    <div class="menu"></div>
+
+    <div class="main">
+        <div class="header">
+            <span>Novo Pedido de Requisição</span>
+        </div>
+        <div class="conteudo">
+            <div class="dadosPrincipais">
+                <div class="titulo">
+                    <span>Dados Principais | Requisição Nº </span>
+                    <input type="number" id="inpNumero">
+                </div>
+                <div class="camposPrincipais">
+                    <div class="camposPrincipaisLinha1 linhasCampos">
+                        <div class="grupo1 grupoInput">
+                            <span>ID.</span>
+                            <input type="number" id="idDepartamento">
+                        </div>
+                        <div class="grupo2 grupoInput">
+                            <span>Departamento</span>
+                            <input type="text" id="departamento">
+                        </div>
+                        <div class="grupo3 grupoInput">
+                            <span>Data</span>
+                            <input type="date" id="dataRequisicao">
+                        </div>
+                    </div>
+                    <div class="camposPrincipaisLinha2 linhasCampos">
+                        <div class="grupo4 grupoInput">
+                            <span>ID Func.</span>
+                            <input type="number" id="idFuncionario">
+                        </div>
+                        <div class="grupo5 grupoInput">
+                            <span>Nome Funcionário</span>
+                            <input type="text" id="NomeFuncionario">
+                        </div>
+                        <div class="grupo6 grupoInput">
+                            <span>Cargo</span>
+                            <input type="text" id="cargo">
+                        </div>
+                    </div>
+                    <div class="camposPrincipaisLinha3 linhasCampos">
+                        <div class="grupo7 grupoInput">
+                            <span>Categoria Motivo</span>  
+                            <div class="grupoCategoria">                                                         
+                                <select id="categoriaMotivo"></select>
+                                <img class="btnAdd" src="/assets/img/add.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="grupo8 grupoInput">
+                            <span>Motivo</span> 
+                            <div class="grupoMotivo"> 
+                                <select id="Motivo"></select>
+                                <img class="btnAdd" src="/assets/img/add.svg" alt="">
+                            </div>                            
+                   
+                        </div>
+                        <div class="grupo9 grupoInput">
+                            <span>Nível de Prioridade</span>
+                            <div class="radioPrioridade">
+                                <div class="grupoPrioridade">
+                                    <input class="chkPrioridade" type="radio" name="prioridade" id="urgente">
+                                    <span>Urgente</span>
+                                    
+                                </div>
+                                <div class="grupoPrioridade">
+                                    <input class="chkPrioridade" type="radio" name="prioridade" id="medio">
+                                    <span>Médio</span>
+                                   
+                                </div>
+                                <div class="grupoPrioridade">
+                                    <input class="chkPrioridade" type="radio" name="prioridade" id="baixo">
+                                    <span>Baixo</span>
+                                    
+                                </div>
+                                
+                                
+                             
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="itensRequisicao">
+                <div class="titulo">
+                    <span>Dados Principais | Requisição Nº </span>                
+                </div>
+                <div class="camposItens">
+                    <div class="linhaAdicionarItens">
+                        
+                            <div class="grupoProduto">
+                                <span>Cod. Produto</span>
+                                <input type="text" id="CodigoProtudo">
+                            </div>
+                            <div class="grupoProdutoDescricao">
+                                <span>Descrição</span>
+                                <input type="text" id="DescricaoProtudo">
+                            </div>
+                            <div class="grupoEstoque">
+                                <span>Quantidade</span>
+                                <input type="text" id="Estoque">
+                            </div>
+                        
+                        
+                            <div class="grupoStatusEstoque"> 
+                                <div>
+                                    <img src="/assets/img/verde.svg" alt="">
+                                </div>                           
+                          
+                            </div>
+                            <div class="grupoBtnInserirItens">
+                                <div class="BtnInserirItens">  
+                                    <span>Adicionar</span>
+                                </div>
+                            </div>
+                       
+                  
+                  
+                     
+                    </div>
+                    <div class="tabelaItens">
+                        Criar a tabela aqui
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+
+   
+    
+</body>
+</html>

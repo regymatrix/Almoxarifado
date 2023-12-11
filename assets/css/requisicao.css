@@ -1,0 +1,146 @@
+*{
+    color: #000000;
+    margin:0;
+    padding: 0;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;    
+    align-items: center;   
+    justify-content: center;  
+}
+.header{
+    width: 40vw;
+    height: 5vh;
+    background-color: #15C7FF;   
+    display: flex;
+    align-items: center;
+    padding-left: 1vw;
+    padding-right: 1vw;
+  
+}
+.header span{
+    color: #ffffff;
+}
+.conteudo{
+    /* background-color: yellow; */
+    padding-top: 3vh;
+    width: 40vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    border-color:  #CDCDCD;;
+    border-radius: 20px;
+    border-style: solid;
+  
+}
+.camposPrincipais{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3vh;
+}
+.linhasCampos{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1vh;
+    justify-content: space-between;
+    align-items: center;
+}
+.grupoInput{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.grupo9{
+    margin-left: 1px;
+    display: flex;
+    justify-content: center;
+}
+.radioPrioridade{  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3px;
+    padding-left: 1px;
+    padding-right: 5px;
+    border-color: #CDCDCD;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+.grupoPrioridade{
+    display: flex;
+    padding-left: 2px;    
+}
+
+.grupoCategoria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnAdd{    
+    width: 30px;
+    height: 30px;
+   
+}
+.btnAdd:hover{
+    cursor: pointer; 
+    scale: 1.5;    
+    transition-duration: 1000ms;    
+
+}
+
+.grupoMotivo{
+    display: flex;
+    justify-content: center;
+    align-items: center;        
+
+}
+
+/* ITENS */
+.camposItens{
+    display: flex;
+    flex-direction: column;
+    border-color: #CDCDCD;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;    
+    width: 100%;
+}
+.linhaAdicionarItens{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: end;        
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+.grupoStatusEstoque{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    margin-left: 5px;           
+}
+.grupoStatusEstoque img{
+    display: flex;
+    width: 30px;
+    height: 30px;
+}
+.grupoBtnInserirItens{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    margin-left: 5px; 
+}
+
+.tabelaItens{
+    margin-top: 10px;
+}
+
