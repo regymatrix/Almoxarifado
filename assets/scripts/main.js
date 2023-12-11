@@ -40,7 +40,6 @@ function carregarCategorias(){
   selectCategoria.innerHTML="";
 
 
-  
   categorias.forEach(function(categoria){
 
     var opt = document.createElement('option');
@@ -52,7 +51,29 @@ function carregarCategorias(){
 
 }
 
+function carregarMotivos(){
+
+  const selectMotivo = document.getElementById('Motivo');
+  selectMotivo.innerHTML="";
+
+  const optFirst = document.createElement('option');
+  optFirst.value=-1;
+  optFirst.text="";
+  selectMotivo.add(optFirst);
+
+  motivos.forEach(function(motivo){
+
+    var opt = document.createElement('option');
+    opt.value= motivo.idMotivo;
+    opt.text = motivo.Descricao;
+    selectMotivo.add(opt);
+
+  })
+
+}
+
 adicionarCoraoFocarInput();
 carregarCategorias();
+carregarMotivos();
 
 console.log(categorias)

@@ -41,7 +41,7 @@ const motivos=[
     {
 
         "idMotivo":3,
-        "Descricao": "Financeiro",
+        "Descricao": "Quebra de máquina",
         "idCategoria":2,
 
     },
