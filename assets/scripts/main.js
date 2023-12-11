@@ -16,12 +16,21 @@ function adicionarCoraoFocarInput(){
   console.log(listInput.length);
   console.log(listInput);
 
-  for(let i = 0;i<listInput.length;i++){
+  listInput.forEach(function(item){
 
-    listInput[i].style.backgroundColor = "green"
+    item.addEventListener('focus',function(){
 
+      item.style.backgroundColor="green";
 
-  }
+    });
+
+    item.addEventListener('blur',function(){
+
+      item.style.backgroundColor="white";
+
+    });
+
+  })
 
 }
 adicionarCoraoFocarInput();
