@@ -33,4 +33,23 @@ function adicionarCoraoFocarInput(){
   })
 
 }
+
+function carregarCategorias(){
+
+  const selectCategoria = document.getElementById('categoriaMotivo');
+  selectCategoria.innerHTML="";
+
+  categorias.forEach(function(categoria){
+
+    var opt = document.createElement('option');
+    opt.value=categoria.idCategoria;
+    opt.text = categoria.Descricao;
+    selectCategoria.add(opt);
+
+  })
+
+}
+
 adicionarCoraoFocarInput();
+
+console.log(categorias)
