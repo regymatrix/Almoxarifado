@@ -61,7 +61,10 @@ function carregarMotivos(){
   optFirst.text="";
   selectMotivo.add(optFirst);
 
-  motivos.forEach(function(motivo){
+  const valorCategoria = document.getElementById('categoriaMotivo').value;
+  const motivosFiltrados = motivos.filter((m)=>m.idCategoria==valorCategoria) 
+
+  motivosFiltrados.forEach(function(motivo){
 
     var opt = document.createElement('option');
     opt.value= motivo.idMotivo;
@@ -74,6 +77,6 @@ function carregarMotivos(){
 
 adicionarCoraoFocarInput();
 carregarCategorias();
-carregarMotivos();
+// carregarMotivos();
 
 console.log(categorias)
