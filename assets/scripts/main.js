@@ -51,5 +51,6 @@ function carregarCategorias(){
 }
 
 adicionarCoraoFocarInput();
+carregarCategorias();
 
 console.log(categorias)
