@@ -16,7 +16,12 @@ function adicionarCoraoFocarInput(){
   console.log(listInput.length);
   console.log(listInput);
 
-  listInput[1].style.backgroundColor = "green"
+  for(let i = 0;i<listInput.length;i++){
+
+    listInput[1].style.backgroundColor = "green"
+
+
+  }
 
 }
 adicionarCoraoFocarInput();
