@@ -19,4 +19,4 @@ function adicionarCoraoFocarInput(){
   listInput[1].style.backgroundColor = "green"
 
 }
-
+adicionarCoraoFocarInput();
