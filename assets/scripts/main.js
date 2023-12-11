@@ -91,10 +91,10 @@ function carregarProduto(){
   if(produtoFiltrado.length>0){
     produtoFiltrado.forEach(function(produto){
 
-      var opt = document.createElement('p');
+      /* var opt = document.createElement('p');
       // opt.value= motivo.idMotivo;
-      opt.text = produto.Descricao + " - " + produto.Estoque + " - " + produto.EstoqueMinimo;
-      selectProduto.add(opt);
+      opt.text =  produto.Descricao + " - " + produto.Estoque + " - " + produto.EstoqueMinimo;*/
+      selectProduto.innerHTML = selectProduto.innerHTML + produto.Descricao + " - " + produto.Estoque + " - " + produto.EstoqueMinimo; ;
 
     })
   }
