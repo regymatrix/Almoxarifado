@@ -16,13 +16,14 @@
     font-size: 20px;    
     align-items: center;   
     justify-content: center;  
-    background: none;
+    
 
 }
 .header{
     width: 50vw;
     height: 5vh;
     background-color: #15C7FF;   
+    background: none;
     display: flex;
     align-items: center;
     padding-left: 1vw;
