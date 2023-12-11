@@ -18,7 +18,7 @@ function adicionarCoraoFocarInput(){
 
   for(let i = 0;i<listInput.length;i++){
 
-    listInput[1].style.backgroundColor = "green"
+    listInput[i].style.backgroundColor = "green"
 
 
   }
