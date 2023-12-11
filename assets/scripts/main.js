@@ -26,7 +26,7 @@ function adicionarCoraoFocarInput(){
 
     item.addEventListener('blur',function(){
 
-      item.style.backgroundColor="white";
+      item.style.background="none";
 
     });
 
