@@ -39,6 +39,8 @@ function carregarCategorias(){
   const selectCategoria = document.getElementById('categoriaMotivo');
   selectCategoria.innerHTML="";
 
+
+  
   categorias.forEach(function(categoria){
 
     var opt = document.createElement('option');

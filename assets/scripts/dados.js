@@ -16,7 +16,7 @@ const categorias = [
     {
 
         "idCategoria":3,
-        "Descricao":"RP"
+        "Descricao":"RP",
     
     },
 ]
