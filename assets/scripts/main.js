@@ -88,14 +88,16 @@ function carregarProduto(){
   const valorId = document.getElementById('CodigoProduto').value;
   const ProdutoFiltrado = produtos.filter((m)=>m.idProduto==valorId) 
 
-  produtoFiltrado.forEach(function(produto){
+  if(produtoFiltrado.length>0){
+    produtoFiltrado.forEach(function(produto){
 
-    var opt = document.createElement('p');
-    // opt.value= motivo.idMotivo;
-    opt.text = produto.Descricao + " - " + produto.Estoque + " - " + produto.EstoqueMinimo;
-    selectProduto.add(opt);
+      var opt = document.createElement('p');
+      // opt.value= motivo.idMotivo;
+      opt.text = produto.Descricao + " - " + produto.Estoque + " - " + produto.EstoqueMinimo;
+      selectProduto.add(opt);
 
-  })
+    })
+  }
 
 }
 
