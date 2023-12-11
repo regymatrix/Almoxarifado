@@ -75,6 +75,30 @@ function carregarMotivos(){
 
 }
 
+function carregarProduto(){
+
+  const selectProduto = document.getElementById('tabelaItens');
+  selectProduto.innerHTML="";
+
+/*   const optFirst = document.createElement('option');
+  optFirst.value=-1;
+  optFirst.text="";
+  selectMotivo.add(optFirst); */
+
+  const valorId = document.getElementById('CodigoProduto').value;
+  const ProdutoFiltrado = produtos.filter((m)=>m.idProduto==valorId) 
+
+  produtoFiltrado.forEach(function(produto){
+
+    var opt = document.createElement('p');
+    // opt.value= motivo.idMotivo;
+    opt.text = produto.Descricao + " - " + produto.Estoque + " - " + produto.EstoqueMinimo;
+    selectProduto.add(opt);
+
+  })
+
+}
+
 adicionarCoraoFocarInput();
 carregarCategorias();
 // carregarMotivos();
