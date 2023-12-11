@@ -12,7 +12,7 @@ document.getElementById('').addEventListener('blur',function(){
 
 function adicionarCoraoFocarInput(){
 
-  const listInput = document.querySelectorAll("input[type=text]");
+  const listInput = document.querySelectorAll("input");
   console.log(listInput.length);
   console.log(listInput);
 
