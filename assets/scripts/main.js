@@ -86,7 +86,7 @@ function carregarProduto(){
   selectMotivo.add(optFirst); */
 
   const valorId = document.getElementById('CodigoProduto').value;
-  const ProdutoFiltrado = produtos.filter((m)=>m.idProduto==valorId) 
+  const produtoFiltrado = produtos.filter((m)=>m.idProduto==valorId) 
 
   if(produtoFiltrado.length>0){
     produtoFiltrado.forEach(function(produto){
