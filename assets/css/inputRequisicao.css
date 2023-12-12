@@ -99,3 +99,15 @@ input, select{
     color: #ffffff;
     font-size: 14px;
 }
+
+#total{
+    width: 120px;
+    background-color: #CDCDCD;
+    margin-left: 5px;
+}
+input{
+    outline-color: #0095C5;
+}
+#total:focus{
+    outline-color: #CDCDCD;
+}

@@ -6,6 +6,7 @@
     <title>Almoxarifado</title>
     <link rel="stylesheet" href="/assets/css/requisicao.css">
     <link rel="stylesheet" href="/assets/css/inputRequisicao.css">
+    <link rel="stylesheet" href="/assets/css/tabelas.css">
 </head>
 <body>
     <div class="menu"></div>
@@ -128,14 +129,31 @@
                                     <span>Adicionar</span>
                                 </div>
                             </div>
-                       
-                  
-                  
-                     
                     </div>
-                    <div class="tabelaItens">
-                        Criar a tabela aqui
+                    <div class="tabela">
+                        <table class="tabelaItens">
+                            <tr>
+                                <th>Código</th>
+                                <th>Produto</th>
+                                <th>Qtd</th>
+                                <th>Un.</th>
+                                <th>Preço</th>
+                                <th>Total</th>
+                            </tr>
+                            <tr>
+                                <td>01</td>
+                                <td>Papel A4</td>
+                                <td>10</td>
+                                <td>Pç</td>
+                                <td>18,00</td>
+                                <td>180,00</td>
+                            </tr>
+                        </table>
                     </div>
+                </div>
+                <div class="linhaTotal">
+                    <span>Total</span>
+                    <input type="text" readonly id="total">
                 </div>
             </div>
     

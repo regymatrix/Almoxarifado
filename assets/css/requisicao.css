@@ -152,7 +152,15 @@
     margin-left: 5px; 
 }
 
-.tabelaItens{
-    margin-top: 10px;
+
+.linhaTotal{
+ margin-top: 10px;
+ margin-bottom: 10px;
+ display: flex;
+ justify-content: end;
+ align-items: center;
+}
+.linhaTotal span{
+    font-size: 18px;
 }
 
