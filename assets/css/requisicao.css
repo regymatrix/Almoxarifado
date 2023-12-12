@@ -50,16 +50,17 @@
     flex-wrap: wrap;
 }
 .linhasCampos{
-    display: flex;
+    display: flex;    
     flex-direction: row;
     margin-top: 1vh;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap;    
 }
 .grupoInput{
     display: flex;
     flex-direction: column;
+    padding-left: 5px;
     
 }
 

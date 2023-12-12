@@ -70,11 +70,19 @@ input, select{
     width: 300px;
 }
 .grupoEstoque{
-    width: 80px;
+    width: 60px;
+    margin-right: 5px; 
 }
 .grupoEstoque input{
+    width: 60px;
+}
+.grupoQuantidade{
     width: 80px;
 }
+.grupoQuantidade input{
+    width: 80px;
+}
+
 
 .BtnInserirItens{
     background-color:#0095C5 ;
