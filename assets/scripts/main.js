@@ -101,6 +101,64 @@ function carregarProduto(){
 
 }
 
+document.getElementById('btnGravar').addEventListener('click',function(){
+    const elementosObrigatorios = document.querySelectorAll('[data-obrigatorio="true"]');
+    // console.log(elementosObrigatorios);
+    
+    let validadoCamposPreenhcidos=true;
+
+    setTimeout(function(){ 
+        // validadoCamposPreenhcidos=true;           
+        if(validadoCamposPreenhcidos){
+            document.getElementById('modalSucesso').style.display='block';
+        }
+    },1000);
+
+    elementosObrigatorios.forEach(function(item){
+        
+        if (item.value=="" || item.value==-1){
+            item.style.backgroundColor='red';
+            validadoCamposPreenhcidos=false;
+        } 
+    })
+
+    const chkUrgenteValue = document.getElementById('urgente').checked;
+    const chkMedioValue = document.getElementById('medio').checked;
+    const chkBaixoValue = document.getElementById('baixo').checked;
+    if (chkUrgenteValue==false && chkMedioValue==false && chkBaixoValue==false){
+        const divPrioridade = document.getElementById("radioPrioridade");
+        divPrioridade.classList.remove('radioPrioridade');
+        divPrioridade.classList.add('radioPrioridadeDesabilitado');        
+        document.getElementById('urgente').classList.remove('chkPrioridade');
+        document.getElementById('urgente').classList.add('chkPrioridadeDesabilitado');
+        document.getElementById('medio').classList.remove('chkPrioridade');
+        document.getElementById('medio').classList.add('chkPrioridadeDesabilitado');
+        document.getElementById('baixo').classList.remove('chkPrioridade');
+        document.getElementById('baixo').classList.add('chkPrioridadeDesabilitado');
+        validadoCamposPreenhcidos=false;
+    }   
+});
+
+function eventoClickPrioridadeHabilitarCor(){
+    const checkboxesPrioridade = document.querySelectorAll('.chkPrioridade');    
+    console.log(checkboxesPrioridade);
+    checkboxesPrioridade.forEach(function(checkbox) {
+        checkbox.addEventListener('click', function() {    
+            const divPrioridade = document.getElementById("radioPrioridade");
+            divPrioridade.classList.add('radioPrioridade');
+            divPrioridade.classList.remove('radioPrioridadeDesabilitado');        
+            document.getElementById('urgente').classList.add('chkPrioridade');
+            document.getElementById('urgente').classList.remove('chkPrioridadeDesabilitado');
+            document.getElementById('medio').classList.add('chkPrioridade');
+            document.getElementById('medio').classList.remove('chkPrioridadeDesabilitado');
+            document.getElementById('baixo').classList.add('chkPrioridade');
+            document.getElementById('baixo').classList.remove('chkPrioridadeDesabilitado');
+        });
+    });
+}
+
+
+
 adicionarCoraoFocarInput();
 carregarCategorias();
 // carregarMotivos();
