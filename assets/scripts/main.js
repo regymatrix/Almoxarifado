@@ -139,6 +139,18 @@ document.getElementById('btnGravar').addEventListener('click',function(){
     }   
 });
 
+function adicionarRegraCamposSomenteNumeros(){
+    const elementosAceitaSoNumeros = document.querySelectorAll('[data-only-number="true"]');
+    elementosAceitaSoNumeros.forEach(function(item){
+        item.addEventListener('keypress', function(e){  
+               
+                if (e.keCode<48 || e.keyCode>59){
+                    e.preventDefault();
+                };
+        });        
+    })
+}
+
 function eventoClickPrioridadeHabilitarCor(){
     const checkboxesPrioridade = document.querySelectorAll('.chkPrioridade');    
     console.log(checkboxesPrioridade);
@@ -157,7 +169,41 @@ function eventoClickPrioridadeHabilitarCor(){
     });
 }
 
+document.getElementById('BtnInserirItens').addEventListener('click',function(){
 
+    const tabelaItens = document.getElementById('tabelaItens');
+    const campoDescricaoProduto = document.geElementById('DescricaoProduto');
+    const campoQuantidade = document.geElementById('Quantidade');
+    const totalRequisicao = document.geElementById('total');
+
+    const linha = document.createElement('tr');
+
+    const tdCodigo = document.createElement('td');
+    const tdDescricao = document.createElement('td');
+    const tdQuantidade = document.createElement('td');
+    const tdUnd = document.createElement('td');
+    const tdPreco = document.createElement('td');
+    const tdTotalLinha = document.createElement('td');
+    const tdBtnRemover = document.createElement('td');
+
+    const produtoPesquisado = produtos.filter((p)=>p.idProduto==campoProduto.value);
+
+    tdCodigo.innerHTML = campoProduto.value;
+    tdDescricao.innerHTML = campoDescricaoProduto.value;
+    tdQuantidade.innerHTML = campoQuantidade.value;
+    tdUnd.innerHTML = produtoPesquisado[0].Unidade;
+    tdPreco.innerHTML = produtoPesquisado[0].Preco;
+    tdTotalLinha.innerHTML = campoQuantidade.value * produtoPesquisado[0].Unidade;
+
+    linha.appendChild(tdCodigo);
+    linha.appendChild(tdDescricao);
+    linha.appendChild(tdQuantidade);
+    linha.appendChild(tdUnd);
+    linha.appendChild(tdPreco);
+    linha.appendChild(tdTotalLinha);
+    tabelaItens.appendChild(linha);
+  
+});
 
 adicionarCoraoFocarInput();
 carregarCategorias();
