@@ -214,7 +214,7 @@ function criarBtnRenover(tabela, objlinha, numeroLinha){
 const btnRemoverItem = document.createElement('div');
 btnRemoveritem.className = "BtnRemover";
 btnRemoveritem.id = 'btnRemover' + numeroLinha;
-btrRemoveritem.innerHTML = '<span> Remover </span>";
+btrRemoveritem.innerHTML = '<span> Remover </span>';
   
 btnRemoveritem.addEventListener('click', function (){
   if (objLinha && tabelaItems.contains(objLinha)) {
