@@ -11,7 +11,7 @@ const categorias = [
         "idCategoria": 3,
         "Descricao": "RP",
     },
-]
+];
 const motivos=[
     {
         "idMotivo": 1,
@@ -28,7 +28,7 @@ const motivos=[
         "Descricao": "Quebra de Máquina",
         "idCategoria": 2
     }
-]
+];
 
 
 const produtos=[
@@ -48,7 +48,7 @@ const produtos=[
         "Unidade": "Un",
         "Preco": 10.00
     },
-]
+];
 
 const departamentos=[
     {
@@ -59,7 +59,7 @@ const departamentos=[
         "Id": 20,
         "Descricao": "Ação Social"
     },
-]
+];
 
 const funcionarios=[
     {
@@ -77,4 +77,4 @@ const funcionarios=[
         "Nome": "Pedro Souza",
         "Cargo": "Menino do Computador"
     },
-]
+];
