@@ -224,7 +224,7 @@ btnRemoveritem.addEventListener('click', function (){
   const totalRequisicao = document.getElementById('total');
   const colunas = objlinha.getElementsByTagName('td');
   let valorlinha = colunas[$].innerText;
-  totalRequisicao.value = parseFloat(totalRequisicao.value - parseFloat(valorLinha)):
+  totalRequisicao.value = parseFloat(totalRequisicao.value - parseFloat(valorLinha));
 })
 return btrRemoveritem;
 }
