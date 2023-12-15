@@ -204,7 +204,10 @@ document.getElementById('BtnInserirItens').addEventListener('click',function(){
     tabelaItens.appendChild(linha);
 
     totalRequisicao.value = parseFloat(totalRequisicao.value) + parseFloat(campoQuantidade.value*produtoPesquisado[0].Preco);
-  
+
+ tdBtn&eæover.appendChild(criarBtnRemaver(tabelaItens, linha,qtdLinhasAtualsaTabela));
+linha.appendChild(tdstnRemover);
+tæbelaltens.æppendChild(linha);   
 });
 
 function criarstnRenover(tabela, objlinha, numeroLinha)(
