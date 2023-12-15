@@ -207,6 +207,21 @@ document.getElementById('BtnInserirItens').addEventListener('click',function(){
   
 });
 
+function criarstnRenover(tabela, objlinha, numeroLinha)(
+const btnRemoverIten = dotument.createtlement("div");
+btmRemoveritem.classMane = "BtnRerover";
+'btnRenover' + merot inha;
+btn&esoveritem.id
+btrRemoveritem,innerllTHL = '<span>Renoverc/span>";
+btr&cmoveritem.addtventListener('click', function () f
+if (ob]linha &5 tabelaItens.contains(ob]Linha)) (
+tabelaltens.renovechild(objLinha)
+const tatalRequisicaa - document.getElenentById('total'):
+const colunas = objlinha.getElementsByTagNane("td'))
+let valorlinha - colunas[$].innerText;
+totalRequisicao.value-parseFloat(totalRequisicao.value-parseFloat(valorLinha)):
+return btrRemoverites;
+
 adicionarCoraoFocarInput();
 carregarCategorias();
 // carregarMotivos();
