@@ -202,6 +202,8 @@ document.getElementById('BtnInserirItens').addEventListener('click',function(){
     linha.appendChild(tdPreco);
     linha.appendChild(tdTotalLinha);
     tabelaItens.appendChild(linha);
+
+    totalRequisicao.value = parseFloat(totalRequisicao.value) + parseFloat(campoQuantidade.value*produtoPesquisado[0].Preco);
   
 });
 
