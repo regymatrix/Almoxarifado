@@ -205,26 +205,29 @@ document.getElementById('BtnInserirItens').addEventListener('click',function(){
 
     totalRequisicao.value = parseFloat(totalRequisicao.value) + parseFloat(campoQuantidade.value*produtoPesquisado[0].Preco);
 
- tdBtn&eæover.appendChild(criarBtnRemaver(tabelaItens, linha,qtdLinhasAtualsaTabela));
-linha.appendChild(tdstnRemover);
-tæbelaltens.æppendChild(linha);   
-});
+    tdBtnRemover.appendChild(criarBtnRemover(tabelaItens, linha,qtdLinhasAtualNaTabela));
+    linha.appendChild(tdBtnRemover);
+    tabelaltens.appendChild(linha);   
+  });
 
-function criarstnRenover(tabela, objlinha, numeroLinha)(
-const btnRemoverIten = dotument.createtlement("div");
-btmRemoveritem.classMane = "BtnRerover";
-'btnRenover' + merot inha;
-btn&esoveritem.id
-btrRemoveritem,innerllTHL = '<span>Renoverc/span>";
-btr&cmoveritem.addtventListener('click', function () f
-if (ob]linha &5 tabelaItens.contains(ob]Linha)) (
-tabelaltens.renovechild(objLinha)
-const tatalRequisicaa - document.getElenentById('total'):
-const colunas = objlinha.getElementsByTagNane("td'))
-let valorlinha - colunas[$].innerText;
-totalRequisicao.value-parseFloat(totalRequisicao.value-parseFloat(valorLinha)):
-return btrRemoverites;
-
+function criarBtnRenover(tabela, objlinha, numeroLinha){
+const btnRemoverItem = document.createElement('div');
+btnRemoveritem.className = "BtnRemover";
+btnRemoveritem.id = 'btnRemover' + numeroLinha;
+btrRemoveritem.innerHTML = '<span> Remover </span>";
+  
+btnRemoveritem.addEventListener('click', function (){
+  if (objLinha && tabelaItems.contains(objLinha)) {
+    tabelaltens.renovechild(objLinha);
+  }
+  
+  const totalRequisicao = document.getElementById('total');
+  const colunas = objlinha.getElementsByTagName('td');
+  let valorlinha = colunas[$].innerText;
+  totalRequisicao.value = parseFloat(totalRequisicao.value - parseFloat(valorLinha)):
+})
+return btrRemoveritem;
+}
 adicionarCoraoFocarInput();
 carregarCategorias();
 // carregarMotivos();
