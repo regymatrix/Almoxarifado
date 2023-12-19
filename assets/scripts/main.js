@@ -87,7 +87,7 @@ function carregarFuncionario(){
 
   console.log("Entrou na função");
   const valorId = document.getElementById("idFuncionario").value;
-  console.log(valorId);
+  console.log("Valor id: " + valorId);
   const funcionarioDesejado = funcionarios.filter((f)=>f.Id==valorId) 
 
   funcionarioDesejado.forEach(function(func){
