@@ -93,13 +93,13 @@ function carregarFuncionario(){
   funcionarioDesejado.forEach(function(func){
 
     console.log('Intro');
-    var CaixaNome = document.getElementById("NomeFuncionario").value;
+    var CaixaNome = document.getElementById("NomeFuncionario");
     console.log(CaixaNome);
-    CaixaNome.textContent = func.Nome;
+    CaixaNome.value = func.Nome;
 
-    var CaixaCargo = document.getElementById("cargo").value;
+    var CaixaCargo = document.getElementById("cargo");
     console.log(CaixaCargo);
-    CaixaCargo.textContent = func.Cargo;
+    CaixaCargo.value = func.Cargo;
 
   })
 
