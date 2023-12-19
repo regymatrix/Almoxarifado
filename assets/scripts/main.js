@@ -91,10 +91,12 @@ function carregarFuncionario(){//manutenção
   funcionarioDesejado.forEach(function(func){
 
     const CaixaNome = document.getElementById('NomeFuncionario');
-    CaixaNome.innerHTML = func.Nome;
+    console.log(CaixaNome);
+    CaixaNome.text = func.Nome;
 
     const CaixaCargo = document.getElementById('cargo');
-    CaixaCargo.innerHTML = func.Cargo;
+    console.log(CaixaCargo);
+    CaixaCargo.text = func.Cargo;
 
   })
 
@@ -108,6 +110,7 @@ function carregarDepartamento(){//manutenção
   departamentoDesejado.forEach(function(dep){
 
     const CaixaTexto = document.getElementById('departamento');
+    console.log(CaixaTexto);
     CaixaTexto.innerHTML = dep.Descricao;
 
   })
