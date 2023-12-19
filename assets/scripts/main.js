@@ -36,15 +36,14 @@ function adicionarCoraoFocarInput(){
 
 function carregarCategorias(){
 
-  const selectMotivo = document.getElementById('categoriaMotivo');
-  selectMotivo.innerHTML="";
+  const selectCategoria = document.getElementById('categoriaMotivo');
+  selectCategoria.innerHTML="";
 
   const optFirst = document.createElement('option');
   optFirst.value=-1;
   optFirst.text="";
-  selectMotivo.add(optFirst);
+  selectCategoria.add(optFirst);
 
-  const selectCategoria = document.getElementById('categoriaMotivo');
   selectCategoria.innerHTML="";
 
 
