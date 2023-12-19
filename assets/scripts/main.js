@@ -44,8 +44,6 @@ function carregarCategorias(){
   optFirst.text="";
   selectCategoria.add(optFirst);
 
-  selectCategoria.innerHTML="";
-
 
   categorias.forEach(function(categoria){
 
