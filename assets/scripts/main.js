@@ -202,7 +202,7 @@ function adicionarRegraCamposSomenteNumeros(){
       console.log(checkboxesPrioridade);
       /* checkboxesPrioridade.forEach(function(checkbox) {
           checkbox.addEventListener('click', function() {     */
-              const divPrioridade = document.getElementById("radioPrioridade");
+              const divPrioridade = document.querySelectorAll("radioPrioridade");
               divPrioridade.classList.add('radioPrioridade');
               divPrioridade.classList.remove('radioPrioridadeDesabilitado');        
               document.getElementById('urgente').classList.add('chkPrioridade');
