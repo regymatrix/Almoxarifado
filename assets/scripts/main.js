@@ -115,7 +115,7 @@ function carregarDepartamento(){
 
     var CaixaTexto = document.getElementById("departamento");
     console.log(CaixaTexto);
-    CaixaTexto.textContent = dep.Descricao;
+    CaixaTexto.value = dep.Descricao;
 
   })
 
