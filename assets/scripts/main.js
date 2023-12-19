@@ -92,6 +92,7 @@ function carregarFuncionario(){
 
   funcionarioDesejado.forEach(function(func){
 
+    console.log('Intro');
     var CaixaNome = document.getElementById("NomeFuncionario");
     console.log(CaixaNome);
     CaixaNome.textContent = func.Nome;
