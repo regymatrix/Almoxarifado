@@ -86,17 +86,17 @@ function carregarMotivos(){
 function carregarFuncionario(){
 
   console.log("Entrou na função");
-  const valorId = document.getElementById('idFuncionario').value;
+  const valorId = document.getElementById("idFuncionario").value;
   console.log(valorId);
   const funcionarioDesejado = funcionarios.filter((f)=>f.Id==valorId) 
 
   funcionarioDesejado.forEach(function(func){
 
-    var CaixaNome = document.getElementById('NomeFuncionario');
+    var CaixaNome = document.getElementById("NomeFuncionario");
     console.log(CaixaNome);
     CaixaNome.textContent = func.Nome;
 
-    var CaixaCargo = document.getElementById('cargo');
+    var CaixaCargo = document.getElementById("cargo");
     console.log(CaixaCargo);
     CaixaCargo.textContent = func.Cargo;
 
@@ -107,12 +107,12 @@ function carregarFuncionario(){
 function carregarDepartamento(){
 
   console.log("Entrou na função");
-  const valorId = document.getElementById('idDepartamento').value;
+  const valorId = document.getElementById("idDepartamento").value;
   const departamentoDesejado = departamentos.filter((d)=>d.Id==valorId) 
 
   departamentoDesejado.forEach(function(dep){
 
-    var CaixaTexto = document.getElementById('departamento');
+    var CaixaTexto = document.getElementById("departamento");
     console.log(CaixaTexto);
     CaixaTexto.textContent = dep.Descricao;
 
