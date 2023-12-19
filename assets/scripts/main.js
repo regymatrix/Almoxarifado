@@ -36,6 +36,14 @@ function adicionarCoraoFocarInput(){
 
 function carregarCategorias(){
 
+  const selectMotivo = document.getElementById('categoriaMotivo');
+  selectMotivo.innerHTML="";
+
+  const optFirst = document.createElement('option');
+  optFirst.value=-1;
+  optFirst.text="";
+  selectMotivo.add(optFirst);
+
   const selectCategoria = document.getElementById('categoriaMotivo');
   selectCategoria.innerHTML="";
 
@@ -70,6 +78,37 @@ function carregarMotivos(){
     opt.value= motivo.idMotivo;
     opt.text = motivo.Descricao;
     selectMotivo.add(opt);
+
+  })
+
+}
+
+function carregarFuncionario(){//manutenção
+
+  const valorId = document.getElementById('idFuncionario').value;
+  const funcionarioDesejado = valorId.filter((f)=>f.Id==valorId) 
+
+  funcionarioDesejado.forEach(function(func){
+
+    const CaixaNome = document.getElementById('NomeFuncionario');
+    CaixaNome.innerHTML = func.Nome;
+
+    const CaixaCargo = document.getElementById('cargo');
+    CaixaCargo.innerHTML = func.Cargo;
+
+  })
+
+}
+
+function carregarDepartamento(){//manutenção
+
+  const valorId = document.getElementById('idDepartamento').value;
+  const departamentoDesejado = valorId.filter((d)=>d.Id==valorId) 
+
+  departamentoDesejado.forEach(function(dep){
+
+    const CaixaTexto = document.getElementById('departamento');
+    CaixaTexto.innerHTML = dep.Descricao;
 
   })
 
