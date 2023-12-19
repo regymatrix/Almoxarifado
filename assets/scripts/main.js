@@ -86,7 +86,7 @@ function carregarMotivos(){
 function carregarFuncionario(){//manutenção
 
   const valorId = document.getElementById('idFuncionario').value;
-  const funcionarioDesejado = valorId.filter((f)=>f.Id==valorId) 
+  const funcionarioDesejado = funcionarios.filter((f)=>f.Id==valorId) 
 
   funcionarioDesejado.forEach(function(func){
 
@@ -103,7 +103,7 @@ function carregarFuncionario(){//manutenção
 function carregarDepartamento(){//manutenção
 
   const valorId = document.getElementById('idDepartamento').value;
-  const departamentoDesejado = valorId.filter((d)=>d.Id==valorId) 
+  const departamentoDesejado = departamentos.filter((d)=>d.Id==valorId) 
 
   departamentoDesejado.forEach(function(dep){
 
