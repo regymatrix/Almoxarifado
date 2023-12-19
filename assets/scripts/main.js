@@ -91,13 +91,13 @@ function carregarFuncionario(){
 
   funcionarioDesejado.forEach(function(func){
 
-    const CaixaNome = document.getElementById('NomeFuncionario');
+    var CaixaNome = document.getElementById('NomeFuncionario');
     console.log(CaixaNome);
-    CaixaNome.text = func.Nome;
+    CaixaNome.textContent = func.Nome;
 
-    const CaixaCargo = document.getElementById('cargo');
+    var CaixaCargo = document.getElementById('cargo');
     console.log(CaixaCargo);
-    CaixaCargo.text = func.Cargo;
+    CaixaCargo.textContent = func.Cargo;
 
   })
 
@@ -111,9 +111,9 @@ function carregarDepartamento(){
 
   departamentoDesejado.forEach(function(dep){
 
-    const CaixaTexto = document.getElementById('departamento');
+    var CaixaTexto = document.getElementById('departamento');
     console.log(CaixaTexto);
-    CaixaTexto.innerHTML = dep.Descricao;
+    CaixaTexto.textContent = dep.Descricao;
 
   })
 
