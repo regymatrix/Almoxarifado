@@ -194,23 +194,30 @@ function adicionarRegraCamposSomenteNumeros(){
     })
 }
 
-function eventoClickPrioridadeHabilitarCor(){
-    const checkboxesPrioridade = document.querySelectorAll('.chkPrioridade');    
-    console.log(checkboxesPrioridade);
-    checkboxesPrioridade.forEach(function(checkbox) {
-        checkbox.addEventListener('click', function() {    
-            const divPrioridade = document.getElementById("radioPrioridade");
-            divPrioridade.classList.add('radioPrioridade');
-            divPrioridade.classList.remove('radioPrioridadeDesabilitado');        
-            document.getElementById('urgente').classList.add('chkPrioridade');
-            document.getElementById('urgente').classList.remove('chkPrioridadeDesabilitado');
-            document.getElementById('medio').classList.add('chkPrioridade');
-            document.getElementById('medio').classList.remove('chkPrioridadeDesabilitado');
-            document.getElementById('baixo').classList.add('chkPrioridade');
-            document.getElementById('baixo').classList.remove('chkPrioridadeDesabilitado');
-        });
-    });
-}
+
+    const checkboxesPrioridade = document.querySelectorAll('.chkPrioridade');  
+    
+    checkboxesPrioridade.forEach((trigger)=>{trigger.addEventListener('click',function(e){
+
+      console.log(checkboxesPrioridade);
+      /* checkboxesPrioridade.forEach(function(checkbox) {
+          checkbox.addEventListener('click', function() {     */
+              const divPrioridade = document.getElementById("radioPrioridade");
+              divPrioridade.classList.add('radioPrioridade');
+              divPrioridade.classList.remove('radioPrioridadeDesabilitado');        
+              document.getElementById('urgente').classList.add('chkPrioridade');
+              document.getElementById('urgente').classList.remove('chkPrioridadeDesabilitado');
+              document.getElementById('medio').classList.add('chkPrioridade');
+              document.getElementById('medio').classList.remove('chkPrioridadeDesabilitado');
+              document.getElementById('baixo').classList.add('chkPrioridade');
+              document.getElementById('baixo').classList.remove('chkPrioridadeDesabilitado');
+         /*  });
+      });
+ */
+    })})
+
+    
+
 
 document.getElementById('BtnInserirItens').addEventListener('click',function(){
 
